@@ -4,7 +4,7 @@ background-size: cover;
 
 }
 .caixa-de-fundo {
-    position: fixed;
+    position: relative;
     top: 10%;
     left: 15%;
     width: 70%;
@@ -27,33 +27,29 @@ background-size: cover;
     padding-top: 0px;
     color: rgb(241, 53, 125);
  }
-.laco1 {
-    position: fixed;
-    top: 7%;
-    left: 13%;
-    width: 12vw;
-    max-width: 110px;
-    min-width: 60px;
-    transform: rotate(-18deg);
-    z-index: 2;
-}
+ .laco1,
+ .laco2{
+    position:absolute;
+    width: 120px;
+    z-index:2 ;
+ }
 
+.laco1 {
+    top: -20px;
+    left: -22px;
+    transform: rotate(-18deg);
+}
 .laco1 img,
 .laco2 img {
-    display: block;
     width: 100%;
     height: auto;
 }
 
 .laco2 {
-    position: fixed;
-    top: 253%;
-    right: -777%;
-    width: 12vw;
-    max-width: 110px;
-    min-width: 60px;
-    transform: rotate(43deg);
-    z-index: 2;
+    top: -20px;
+    right: -20px;
+    transform: rotate(30deg);
+
 }
 
 
