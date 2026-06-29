@@ -27,24 +27,34 @@ background-size: cover;
     padding-top: 0px;
     color: rgb(241, 53, 125);
  }
-.laco {
+.laco1 {
     position: fixed;
-    top: 10%;
+    top: 7%;
     left: 13%;
-    width: 0%;
-    height: 20%;
-    display: flex;
-    rotate: -18deg;
+    width: 12vw;
+    max-width: 110px;
+    min-width: 60px;
+    transform: rotate(-18deg);
+    z-index: 2;
+}
+
+.laco1 img,
+.laco2 img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .laco2 {
     position: fixed;
-    top: 180%;
-    left: 867px;
-    width: 0%;
-    height: 100%;
-    display: flex;
-    rotate: 43deg;
+    top: 253%;
+    right: -777%;
+    width: 12vw;
+    max-width: 110px;
+    min-width: 60px;
+    transform: rotate(43deg);
+    z-index: 2;
 }
+
 
     
