@@ -22,7 +22,7 @@ background-size: cover;
 
  .caixa-de-fundo p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 50px;
     padding: 30px;
     padding-top: 0px;
     color: rgb(241, 53, 125);
@@ -51,6 +51,26 @@ background-size: cover;
     transform: rotate(30deg);
 
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.envelopeclosed {
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    left: 15%;
+    width: 50%;
+    height: 90%;
+    background-color: rgb(245, 107, 160);
+    border-radius: 20px;
+    border: 4px solid rgb(226, 52, 119)
+    
+    
+   
+
+}
 
     
