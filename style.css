@@ -1,4 +1,5 @@
-body {
+body.page1,
+body.page2 {
     background-image: url('https://i.pinimg.com/736x/88/ae/73/88ae7337fe1891ade67bbdcfe8e32e1a.jpg');
 background-size: cover;
 
@@ -56,21 +57,95 @@ background-size: cover;
     justify-content: center;
     align-items: center;
 }
-
-.envelopeclosed {
-    position: absolute;
-    margin: 0 auto;
-    top: 40%;
-    left: 15%;
-    width: 50%;
-    height: 90%;
-    background-color: rgb(245, 107, 160);
-    border-radius: 20px;
-    border: 4px solid rgb(226, 52, 119)
-    
-    
-   
-
+.centro {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-    
+.page3 {
+    background-image: url('https://i.pinimg.com/1200x/8d/a5/82/8da582483d3c988c846d49429ca3e2e5.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixa {
+    position: relative;
+     top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    border: 4px dotted rgb(245, 43, 43);
+    text-align: center;
+
+}
+.caixa h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(245, 43, 43);
+}
+
+    .caixa p {
+        text-align: justify;
+        font-size: 40px;
+        padding: 30px;
+        color: rgb(245, 43, 43);
+    }
+
+.cortina {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1000;
+    transition: 1s ease-in-out;
+}
+body.page3 {
+    overflow: hidden;
+}
+
+#conteudo {
+    display: none;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/*botao*/
+#abrircortina {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 30px;
+    font-size: 24px;
+    z-index: 1001;
+    cursor: pointer
+}
+
+#cortina {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    z-index: 1000;
+}
+
+#cortina img {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+    transition: transform 2s ease;
+}
+
+/* Animação*/
+.aberta .esquerda {
+    transform: translateX(-100%);
+}
+.aberta .direita {
+    transform: translateX(100%);
+}
