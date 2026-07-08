@@ -17,18 +17,18 @@ background-repeat: no-repeat;
     height: 90%;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-    border: 4px dotted rgb(253, 149, 197)
+    border: 8px dashed rgb(253, 149, 197)
     
 }
  .caixa-de-fundo h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 50px;
     color: rgb(241, 53, 125);
  }
 
  .caixa-de-fundo p {
     text-align: justify;
-    font-size: 50px;
+    font-size: 40px;
     padding: 30px;
     padding-top: 0px;
     color: rgb(241, 53, 125);
@@ -74,10 +74,11 @@ background-repeat: no-repeat;
     border-radius: 20px;
     padding: 2px;
     padding-top: 3px;
-    margin: 50px;
+    margin: 60px;
     border-style: dashed;
     border-width: 5px;
     border-color: rgb(241, 53, 125);
+    margin-top: 60px;
 }
 
 .fundo h1 {
@@ -90,11 +91,12 @@ background-repeat: no-repeat;
 .page1 button {
     background-color: rgb(241, 53, 125);
     color: white;
-    padding: 15px 30px;
-    font-size: 70px;
+    padding: 20px 40px;
+    font-size: 80px;
     border-style: hidden;
     box-shadow: 5px 6px 7px  rgba(0, 0, 0, 0.3);
     border-radius: 30px;
+     margin-top: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
 
@@ -150,21 +152,23 @@ background-repeat: no-repeat;
     height: 90%;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-    border: 4px dotted rgb(245, 43, 43);
+    border: 8px dashed rgb(201, 28, 28);
     text-align: center;
 
 }
-.caixa h2 {
+.caixa h1 {
     text-align: center;
-    font-size: 40px;
-    color: rgb(245, 43, 43);
+    padding-top: 10px;
+    font-size:50px;
+    color: rgb(184, 21, 21);
 }
 
     .caixa p {
         text-align: justify;
         font-size: 40px;
         padding: 30px;
-        color: rgb(245, 43, 43);
+        padding-top:0px;
+        color: rgb(184, 21, 21);
     }
 
 .cortina {
@@ -260,3 +264,11 @@ body.page3 {
         opacity: 0;
         transform: translate(-50%, -50%) scale(1);
     }}
+
+    .page1 p {
+        text-align: center;
+        font-size: 40px;
+        padding: 30px;
+        padding-top:0px;
+        color: rgb(241, 53, 125);
+    }
