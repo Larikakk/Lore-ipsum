@@ -1,9 +1,14 @@
-body.page1,
-body.page2 {
+body.page1 {
     background-image: url('https://i.pinimg.com/736x/88/ae/73/88ae7337fe1891ade67bbdcfe8e32e1a.jpg');
 background-size: cover;
-
 }
+body.page2 {
+    background-image: url('https://i.pinimg.com/vwebpf/736x/8d/7b/81/8d7b81e64faa6714786a77f11995b53e.webp');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
 .caixa-de-fundo {
     position: relative;
     top: 10%;
@@ -86,13 +91,17 @@ background-size: cover;
     background-color: rgb(241, 53, 125);
     color: white;
     padding: 15px 30px;
-    font-size: 24px;
+    font-size: 70px;
     border-style: hidden;
     box-shadow: 5px 6px 7px  rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 100px;
+   position: absolute;
+   top: 50%;
+    left: 50%;
+    
+
 
 }
 
@@ -104,9 +113,35 @@ background-size: cover;
     transform: translateY(2px) scale(0.9);
 }
 
+.page2 button {
+    background-color: rgb(241, 53, 125);
+    color: white;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-style: hidden;
+    box-shadow: 5px 6px 7px  rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+}
+
+.page2 button:hover {
+       transform: translateY(-5px) scale(1.1);
+    }
+
+.page2 button:active {
+    transform: translateY(2px) scale(0.9);
+}
+
+
 .page3 {
     background-image: url('https://i.pinimg.com/1200x/8d/a5/82/8da582483d3c988c846d49429ca3e2e5.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -142,6 +177,8 @@ background-size: cover;
     top: 0;
     left: 0;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     z-index: 1000;
     transition: 1s ease-in-out;
@@ -153,7 +190,7 @@ body.page3 {
 #conteudo {
     display: none;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 /*botao*/
