@@ -189,3 +189,34 @@ body.page3 {
 .aberta .direita {
     transform: translateX(100%);
 }
+
+.foxy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale (0.3);
+    opacity: 0;
+    z-index: 999;
+    animation : jumpscare 0.35s ease-in-out forwards;
+    animation-delay: 2s;
+    
+}
+
+.foxy img {
+    width: 500px;
+    pointer-events: none;
+}
+
+@keyframes jumpscare {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.3);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }}
